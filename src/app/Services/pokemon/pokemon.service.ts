@@ -19,4 +19,8 @@ export class PokemonService {
     this.url = `pokemon/${index}`;
     return this._httpService.httpGet(this.url);
   }
+
+  getBaseUrl(url: string): Observable<any> {
+    return this._httpService.httpGetWithOutBaseUrl(url);
+  }
 }

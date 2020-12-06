@@ -1,0 +1,47 @@
+@import "../../../../styles/variables.sass"
+
+.container
+  width: 100vw
+  height: 100%
+  overflow: auto
+
+  .mat-elevation-z8
+    width: 100%
+    height: 80%
+
+    .mat-table
+      width: 100%
+      height: 100%
+      text-align: center
+
+      .mat-header-cell
+        background-color: $red
+        color: $white
+        font-weight: bold
+        font-size: 1em
+        text-align: center
+
+      .mat-cell:first-letter
+        text-transform: uppercase
+
+      .mat-row
+        background-color: $white
+        transition: background 1s ease
+
+      .mat-row:hover
+        cursor: pointer
+        background-color: $green
+
+
+@media screen and ( min-width: 768px )
+  .container
+    display: flex
+    justify-content: center
+
+    .mat-elevation-z8
+      width: 80%
+
+      .mat-table .mat-header-cell
+        font-size: 1.5em !important
+
+

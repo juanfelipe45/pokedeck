@@ -17,4 +17,8 @@ export class HttpService {
   httpGet(url: string) {
     return this._http.get(this.url + url).pipe(map((res: any) => res));
   }
+
+  httpGetWithOutBaseUrl(url: string) {
+    return this._http.get(url).pipe(map((res: any) => res));
+  }
 }

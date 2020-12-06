@@ -11,6 +11,7 @@ import { MaterialModule } from './Modules/shared/material.module';
 // Components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HeaderComponent } from './Components/header/header.component';
     BrowserModule,
     MaterialModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,16 @@
 
+@import "../styles/variables.sass"
+
 .header-component
   height: 10vh
-  margin-bottom: 2vh
+  background-color: $blue
 
 .container
-  height: 88vh
+  height: 90vh
   overflow: hidden
+  background-color: $gray
+
+@media screen and ( min-width: 768px )
+  .container
+    padding-top: 2vh
+
