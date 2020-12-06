@@ -6,7 +6,7 @@
   padding-top: 8vh
 
   .card
-    padding: 12px
+    padding: 10px
 
     .mat-card-header
       align-items: center
@@ -46,6 +46,27 @@
     .mat-card-content
       padding: 0 10px
 
+      .type-details
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        width: 100%
+        margin-bottom: 10px
+
+        .item-type
+          background-color: $yellow
+          color: $black
+          border-radius: 25px
+          margin: 0 25px
+          width: 80px
+          height: 25px
+          text-align: center
+          font-size: 20px
+
+          &:first-letter
+            text-transform: uppercase
+
+
       .pokemon-details
         margin-bottom: 25px
         box-shadow: 19px 19px 19px 1px rgba(0,0,0,0.5)
@@ -77,7 +98,7 @@
     overflow: hidden
 
     .card
-      width: 70%
+      width: 75%
       height: 85%
       border-radius: 25px
       overflow: auto
@@ -96,9 +117,16 @@
         margin: 25px auto 0 auto
         justify-content: space-between
 
-        .mat-card-image
-          height: 120px
-          width: 50%
+        .pokemon-type
+          width: 45%
+
+          .mat-card-image
+            height: 120px
+            width: 100%
+
+          .type-details
+            margin: 0
+
 
         .pokemon-details
           width: 40%

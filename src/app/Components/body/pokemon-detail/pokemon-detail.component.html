@@ -11,7 +11,12 @@
     </div>
     <mat-card-content>
       <div class="group-content">
-        <img mat-card-image src="{{pokemon.image}}" alt="foto pokemon">
+        <div class="pokemon-type">
+          <img mat-card-image src="{{pokemon.image}}" alt="foto pokemon">
+          <div class="type-details" >
+            <div class="item-type" *ngFor="let type of pokemon.types">{{type.type.name}}</div>
+          </div>
+        </div>
         <section class="pokemon-details" >
           <div class="details-header"><h3 class="details-title">Habilidades</h3></div>
           <div class="details-container" *ngFor="let ability of pokemon.abilities | slice: 0:5">
