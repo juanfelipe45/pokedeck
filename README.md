@@ -15,5 +15,5 @@ La arquitectura que se uso para la creación de esta aplicación fueron 4 carpet
 
 ## Como usar el servicio
 Descargar la aplicación, en la consola posicionarse en la carpeta del proyecto y ejecutar la setencia `ng serve` El proyecto corre por el puerto default de angular 4200.
-En la aplicación se encontraran con la tabla de pokemons con la paginazación un item de la tabla redirecciona al pokemon con sus detalles.
-Para volver es necesario dar click en el logo de pokemon
+En la aplicación se encontraran con la tabla de pokemons con la paginazación, al seleccionar un item de la tabla redirecciona al pokemon con sus detalles.
+Para volver es necesario dar click en el logo de pokemon del header.
